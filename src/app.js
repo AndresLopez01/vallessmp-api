@@ -22,6 +22,14 @@ app.use(bodyParser.json({ limit: '10mb' }));
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
+// Create a CORS middleware
+const corsMiddleware = cors({
+  origin: '*', // Allow requests from all origins
+});
+
+// Apply the CORS middleware to the router
+router.use(corsMiddleware);
+
 //ROUTERS
 app.set('port', config.app.port);
 app.use('/api/v1/auth', auth);
