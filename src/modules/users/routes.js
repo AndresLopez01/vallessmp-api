@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const security = require('./security');
 const responses = require('../../network/responses');
-const controller = require('./index');const cors = require('cors');
+const controller = require('./index');
+const cors = require('cors');
 
 // Create a CORS middleware
 const corsMiddleware = cors({
