@@ -3,6 +3,16 @@ const router = express.Router();
 const responses = require('../../network/responses');
 const controller = require('./index');
 
+const cors = require('cors');
+
+// Create a CORS middleware
+const corsMiddleware = cors({
+    origin: '*', // Allow requests from all origins
+});
+
+// Apply the CORS middleware to the router
+router.use(corsMiddleware);
+
 //RUTAS PARA CONSULTAR
 router.post('/login', login);
 
