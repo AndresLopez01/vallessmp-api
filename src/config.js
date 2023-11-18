@@ -7,9 +7,9 @@ module.exports = {
         secret: process.env.jet_secret || '7l;=e?H~*K(^XiR',
     },
     mysql: {
-        host: process.env.mysql_host || 'sql10.freemysqlhosting.net',
-        user: process.env.mysql_user || 'sql10660004',
-        password: process.env.mysql_password || 'M3PPubIMgH',
-        database: process.env.mysql_db || 'sql10660004',
+        host: process.env.mysql_host || 'sql10.freesqldatabase.com',
+        user: process.env.mysql_user || 'sql10663051',
+        password: process.env.mysql_password || 'cetpbubvFb',
+        database: process.env.mysql_db || 'sql10663051',
     }
 }
